@@ -18,7 +18,12 @@ In the field of aviation, can we use deep learning to classify a helicopter/ fix
 * Instead of manually recording aircraft a Python library was used to download and convert YouTube video from mp3 to wav files.
 * Each audio clip was then sliced into 15 sec clips
 * Stored into 2 classes (Helo/Fixed)
+
+
 * mffcs were extracted from each clip to train the models using 13 and 40 mffcs
+![mffcs](https://github.com/reynoso811/Capstone_Audio-Analysis/blob/main/mfcc_1.png)
+
+![spec](https://github.com/reynoso811/Capstone_Audio-Analysis/blob/main/mfcc_1.png)
 
 
 ## EDA (Exploratory Data Analysis)
