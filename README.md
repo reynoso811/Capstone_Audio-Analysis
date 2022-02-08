@@ -19,8 +19,11 @@ In the field of aviation, can we use deep learning to classify a helicopter/ fix
 * Each audio clip was then sliced into 15 sec clips
 * Stored into 2 classes (Helo/Fixed)
 
+* Mel Frequency Cepstral Coefficients (mfccs) 
 
-* mffcs were extracted from each clip to train the models using 13 and 40 mffcs
+The MFCC feature extraction technique basically includes windowing the signal, applying the DFT, taking the log of the magnitude, and then warping the frequencies on a Mel scale, followed by applying the inverse DCT.
+
+mffcs were extracted from each clip to train the models using 13 and 40 mffcs
 ![mffcs](https://github.com/reynoso811/Capstone_Audio-Analysis/blob/main/mfcc_1.png)
 
 * Spectrograms
@@ -46,37 +49,9 @@ It plots Frequency (y-axis) vs Time (x-axis) and uses different colors to indica
 ## Models
 ![Test](https://github.com/reynoso811/Capstone_Audio-Analysis/blob/main/Model%20Summary.png)
 
-* Baseline MLP (Multi Layer Perceptron) Model:
-    - The best accuracy the MLP model could achieve was about 75%.
-    
-        - The instability in the model can be seen in the loss and accuracy curves. We can see the instability in the variance 
-          of the curves on both graphs ranging from 5.00 to 25.00 %, at certain points without subsiding. This can be seen 
-          with the divergence of both curves beyond 20 Epochs. The training data almost reachs perfection, while the testing 
-          data fails to improve.
-          
-        - The model is overfitting, quite a bit. We can see around Epoch 20 on the Binary Accuracy graph that the model 
-          doesn't not improve.
-          
-        - This model could be improved/tuned by using differnet activation functions, trying different optimizers, 
-          including early stopping and different degrees of dropouts.
-        
-        
-* Baseline CNN Model Model:
-    - The best accuracy the MLP model could achieve was about 74%
-
-        - Simple sequential model was used, starting with 5 double convolutional networks of kernel size (3, 3) and max pooling with pool size (2, 2).            Additionally has batch normalization and dropout
-        
-           
-* Pre-trained Model (VGG16):
-    - The best accuracy from the Transfer Learning CNN Model was about 94%:
-
-        - This model was saved and used to make predictions on our validation data
-        - This was done due to the high accuracy of this model
-
-
-* Talos Tuned CNN Model:
-    - The model is still running....
-        - I will update this part upon completion...
+* Baseline CNN
+* Baseline RNN
+* CNN and RNN with different mfcc's coefficients 
         
 
 ##  Conclusion and Recommendation
