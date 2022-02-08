@@ -49,9 +49,11 @@ It plots Frequency (y-axis) vs Time (x-axis) and uses different colors to indica
 ## Models
 ![Test](https://github.com/reynoso811/Capstone_Audio-Analysis/blob/main/Model%20Summary.png)
 
+* You can extract features which look like images and shape them in a way in order to feed them into a CNN.
 * Baseline CNN
 * Baseline RNN
-* CNN and RNN with different mfcc's coefficients 
+* CNN and RNN with different mfcc's coefficients (13, 40)
+* The best performing model achieved an accuracy or 97% using a simple CNN archtecture with 40 mffc's
         
 
 ##  Conclusion and Recommendation
