@@ -22,8 +22,6 @@ In the field of aviation, can we use deep learning to classify a helicopter/ fix
 
 
 ## EDA (Exploratory Data Analysis)
-![EDA](https://github.com/reynoso811/Image-Classification-Pneumonia-X-rays-/blob/main/Screen%20Shot%202021-12-02%20at%2010.47.49%20AM.png)
-* Data Exploration using Pandas Profling
 
 * Distribution of classes
     - Helicopter
