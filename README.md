@@ -23,7 +23,15 @@ In the field of aviation, can we use deep learning to classify a helicopter/ fix
 * mffcs were extracted from each clip to train the models using 13 and 40 mffcs
 ![mffcs](https://github.com/reynoso811/Capstone_Audio-Analysis/blob/main/mfcc_1.png)
 
-![spec](https://github.com/reynoso811/Capstone_Audio-Analysis/blob/main/mfcc_1.png)
+* Spectrograms
+
+A Fourier Transform decomposes the signal into its constituent frequencies and displays the amplitude of each frequency present in the signal.
+
+A Spectrogram chops up the duration of the sound signal into smaller time segments and then applies the Fourier Transform to each segment, to determine the frequencies contained in that segment. It then combines the Fourier Transforms for all those segments into a single plot.
+
+It plots Frequency (y-axis) vs Time (x-axis) and uses different colors to indicate the Amplitude of each frequency. The **brighter the color the higher the energy** of the signal.
+
+![spec](https://github.com/reynoso811/Capstone_Audio-Analysis/blob/main/melspec_1.png)
 
 
 ## EDA (Exploratory Data Analysis)
@@ -73,23 +81,29 @@ In the field of aviation, can we use deep learning to classify a helicopter/ fix
 
 ##  Conclusion and Recommendation
 
-* Pre-trained Model was the best model
-    - Transfer learning generally refers to a process where a model trained on one problem is used in some way on a second 
-      related problem.
-        - VGG-16 is a dataset of over 14 million images belonging to 1000 classes
-    - One or more layers from the trained model are then used in a new model trained on the pneumonia images.
- 
+
+1. We learned that it is possible to classify a helicopter or a fixed-wing aircraft with a high degree of accuracy
+
+
+2. A simple CNN model with more mfccs performed the best at 97.3 % accuracy
+
+
+3. Confidence in applying in a real world situation
+
 
 
 ## Next Steps: 
 
-* Try different activation functions 
+* Data augmentation on audio
 
 
-* Re-run tuned CNN
+* Use spectrograms instead of mfccs
 
 
-* Try to use Grad-CAM class activation visualization
+* Test in real world conditions
+
+
+
 
 
 
