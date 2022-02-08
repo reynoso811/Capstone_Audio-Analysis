@@ -86,7 +86,7 @@ It plots Frequency (y-axis) vs Time (x-axis) and uses different colors to indica
 
 ## For More Information
 
-Please review my full technical analysis in [Notebook](https://github.com/reynoso811/Image-Classification-Pneumonia-X-rays-/blob/main/Phase_04_MLP_CNN_talos.ipynb) or my nontechnical analysis in [presentation](https://github.com/reynoso811/Image-Classification-Pneumonia-X-rays-/blob/main/Phase_04%20-%20Image%20Classification.pdf).
+Please review my full technical analysis in [Notebook](https://github.com/reynoso811/Capstone_Audio-Analysis/blob/main/1)%20What%20is%20sound%20and%20EDA.ipynb) or my nontechnical analysis in [presentation](https://github.com/reynoso811/Capstone_Audio-Analysis/blob/main/Capstone%20-%20Audion%20Classification.pdf).
 
 For any additional questions, please contact **Robert reynoso at robert@birdstop.io**
 
