@@ -12,13 +12,13 @@ January 07, 2022
 In the field of aviation, can we use deep learning to classify a helicopter/ fixed wing aircraft and to what degree of accuracy?
 
 ## Data
-![aircraft](https://github.com/reynoso811/Capstone_Audio-Analysis/blob/main/waveform_post.png)
+
+![wavfile](https://github.com/reynoso811/Capstone_Audio-Analysis/blob/main/Helo_wave.png)
 
 * Instead of manually recording aircraft a Python library was used to download and convert YouTube video from mp3 to wav files.
 * Each audio clip was then sliced into 15 sec clips
 * Stored into 2 classes (Helo/Fixed)
-
-![wavfile](https://github.com/reynoso811/Capstone_Audio-Analysis/blob/main/Helo_wave.png)
+* mffcs were extracted from each clip to train the models using 13 and 40 mffcs
 
 
 ## EDA (Exploratory Data Analysis)
@@ -30,21 +30,10 @@ In the field of aviation, can we use deep learning to classify a helicopter/ fix
         - 210 clips
     - Fixed wing
         - 208 clips
-    
-* Both Data Sets are Imbalanced
-    - Favoring Pneumonia in both cases 
-    
-* Normal X-Rays are labeled 0
-
-* Pneumonia X-Rays are labeled 1
-    - Regardless of the type of pneumonia
 
 
 ## Models
-![Test](https://github.com/reynoso811/Image-Classification-Pneumonia-X-rays-/blob/main/Screenshot%20from%202021-12-06%2020-53-58.png)
-
-* 5 part iterative modeling process with results: 
-
+![Test](https://github.com/reynoso811/Capstone_Audio-Analysis/blob/main/Model%20Summary.png)
 
 * Baseline MLP (Multi Layer Perceptron) Model:
     - The best accuracy the MLP model could achieve was about 75%.
