@@ -1,4 +1,5 @@
-# Capstone_Audio-Analysis# 
+# Capstone_Audio-Analysis
+
 **Acoustic classification of Rotary-wing and Fixed-wing aircraft using Deep Learning**
 ![xray](https://github.com/reynoso811/Capstone_Audio-Analysis/blob/main/heloVSfixed.png)
 
@@ -12,24 +13,24 @@ January 07, 2022
 In the field of aviation, can we use deep learning to classify a helicopter/ fixed wing aircraft and to what degree of accuracy?
 
 ## Data
+[aircraft](https://github.com/reynoso811/Capstone_Audio-Analysis/blob/main/waveform_post.png)
 
-* Guangzhou Women and Children’s Medical Center
-    - There are 5,863 X-Ray images (JPEG) and 2 categories (Pneumonia/Normal)
-    - Selected from retrospective cohorts of pediatric patients of one to five years old 
-    - All chest X-ray imaging was performed as part of patients’ routine clinical care.
-* Provided by Kaggle
-    - https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia 
+* Instead of manually recording aircraft a Python library was used to download and convert YouTube video from mp3 to wav files.
+* Each audio clip was then sliced into 15 sec clips
+* Stored into 2 classes (Helo/Fixed)
+
+[wavfile](https://github.com/reynoso811/Capstone_Audio-Analysis/blob/main/Helo_wave.png)
 
 
 ## EDA (Exploratory Data Analysis)
 ![EDA](https://github.com/reynoso811/Image-Classification-Pneumonia-X-rays-/blob/main/Screen%20Shot%202021-12-02%20at%2010.47.49%20AM.png)
 * Data Exploration using Pandas Profling
 
-* Distribution of Images
-    - Train Images
-        - A total of 5216 Images
-    - Test Images
-        - A total of 624 Images
+* Distribution of classes
+    - Helicopter
+        - 210 clips
+    - Fixed wing
+        - 208 clips
     
 * Both Data Sets are Imbalanced
     - Favoring Pneumonia in both cases 
