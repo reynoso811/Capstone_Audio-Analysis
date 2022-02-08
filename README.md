@@ -1,6 +1,5 @@
-# Capstone_Audio-Analysis
+# Acoustic classification of Rotary-wing and Fixed-wing aircraft using Deep Learning
 
-**Acoustic classification of Rotary-wing and Fixed-wing aircraft using Deep Learning**
 ![xray](https://github.com/reynoso811/Capstone_Audio-Analysis/blob/main/heloVSfixed.png)
 
 **Author**: Robert Reynoso
@@ -13,13 +12,13 @@ January 07, 2022
 In the field of aviation, can we use deep learning to classify a helicopter/ fixed wing aircraft and to what degree of accuracy?
 
 ## Data
-[aircraft](https://github.com/reynoso811/Capstone_Audio-Analysis/blob/main/waveform_post.png)
+![aircraft](https://github.com/reynoso811/Capstone_Audio-Analysis/blob/main/waveform_post.png)
 
 * Instead of manually recording aircraft a Python library was used to download and convert YouTube video from mp3 to wav files.
 * Each audio clip was then sliced into 15 sec clips
 * Stored into 2 classes (Helo/Fixed)
 
-[wavfile](https://github.com/reynoso811/Capstone_Audio-Analysis/blob/main/Helo_wave.png)
+![wavfile](https://github.com/reynoso811/Capstone_Audio-Analysis/blob/main/Helo_wave.png)
 
 
 ## EDA (Exploratory Data Analysis)
